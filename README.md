@@ -1,0 +1,2 @@
+# safy.dev
+soon.
