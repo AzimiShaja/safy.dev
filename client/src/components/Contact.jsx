@@ -1,0 +1,19 @@
+import {BsFillSendFill} from "react-icons/bs";
+export default function Contact(){
+    return (
+        <div id="contact" className="py-10 md:px-60 px-3">
+            <div className="">
+            <h1 className="text-4xl font-bold">Contact Us</h1>
+            <div className="bg-orange-400 w-full h-1 relative top-5"></div>
+            </div>
+            <div className="pt-12">
+                <form className="flex flex-col max-md:items-center gap-3">
+                    <input type="text" className="border-primary" placeholder="Full name"/>
+                    <input type="email" className="border-primary" placeholder="example@email.com"/>
+                    <textarea name="" id=""  rows="4" placeholder="your message"></textarea>
+                    <button className="bg-primary px-4 py-2 w-3/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
+                </form>
+            </div>
+        </div>
+    )
+}   

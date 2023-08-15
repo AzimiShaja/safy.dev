@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+.btns {
+  @apply   px-3 py-1 rounded-lg; 
+}
+input[type="email"], input[type="password"], input[type="text"]{
+  @apply border py-3 px-3 md:w-96 w-72 rounded-lg;
+}
+
+.icons {
+  @apply text-3xl duration-300 hover:scale-125 cursor-pointer; 
+}
+span {
+  @apply text-primary ;
+}
+
+.li {
+  @apply border-b py-2 px-2 border-gray-300
+}
+textarea {
+  @apply md:w-4/12 border rounded-xl p-4 my-2 border-primary
+}
+.footer-icons {
+  @apply text-white text-3xl cursor-pointer;
+}
