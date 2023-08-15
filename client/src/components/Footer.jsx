@@ -18,7 +18,7 @@ export default function Footer(){
                 </ul>
             </div>
             <div className="text-white flex gap-1">
-                <p className="flex gap-1 items-center text-white border-r-2 px-2">Copyright <FaRegCopyright /> 2023</p>
+                <p className="flex gap-1 items-center text-white border-r-2 px-2">Copyright <FaRegCopyright /> {new Date().getFullYear()}</p>
                 <p className="px-2">All rights are reserved</p>
             </div>
         </footer>

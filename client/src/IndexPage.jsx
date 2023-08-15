@@ -20,7 +20,7 @@ export default function IndexPage() {
                         </div>
                     </div>
                     <div className="w-full">
-                    <img className="rounded-l-full shadow-2xl" src="images/coding-bg.jpeg" alt="" />
+                    <img className="rounded-l-full shadow-2xl" src="/images/coding-bg.jpeg" alt="" />
                     </div>
                 </div>
             </div>

@@ -32,7 +32,7 @@ export default function Course() {
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
                         <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
-                        <button className="underline">Show More</button>
+                        <button className="underline">Learn More</button>
                     </div>
                 </div>
                 <div className="p-4 shadow-lg rounded-lg">
@@ -45,7 +45,7 @@ export default function Course() {
                     </div>
                     <div className="flex max-md:flex-col gap-4 mt-4">
                     <button className="btns bg-primary text-white flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
-                        <button className="underline">Show More</button>
+                        <button className="underline">Learn More</button>
                     </div>
                    
                 </div>
@@ -65,7 +65,7 @@ export default function Course() {
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
                         <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
-                        <button className="underline">Show More</button>
+                        <button className="underline">Learn More</button>
                     </div>
                 </div>
                 <div className="p-4 shadow-lg rounded-lg">
@@ -78,7 +78,7 @@ export default function Course() {
                     </div>
                     <div className="flex max-md:flex-col gap-4 mt-4">
                     <button className="btns border border-white bg-primary text-white flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
-                        <button className="underline">Show More</button>
+                        <button className="underline">Learn More</button>
                     </div>
                    
                 </div>
@@ -92,7 +92,7 @@ export default function Course() {
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
                         <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
-                        <button className="underline">Show More</button>
+                        <button className="underline">Learn More</button>
                     </div>
                 </div>
             </div>

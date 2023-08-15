@@ -11,7 +11,7 @@ export default function Contact(){
                     <input type="text" className="border-primary" placeholder="Full name"/>
                     <input type="email" className="border-primary" placeholder="example@email.com"/>
                     <textarea name="" id=""  rows="4" placeholder="your message"></textarea>
-                    <button className="bg-primary px-4 py-2 w-3/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
+                    <button className="bg-orange-400 px-4 py-2 md:w-2/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
                 </form>
             </div>
         </div>

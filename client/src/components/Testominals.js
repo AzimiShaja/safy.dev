@@ -47,14 +47,6 @@ const testimonials = [
         pfp: "./images/sophia.png",
         review: "I highly recommend safy.dev's services. The attention to detail and the level of communication were outstanding. They truly care about their clients' needs.",
     }, 
-    
-    {
-        key: "8",
-        name: "David Thompson",
-        pfp: "./images/david.jpg",
-        review: "From start to finish, the process with safy.dev was smooth and hassle-free. The team's creativity and problem-solving skills made my project a success.",
-    }, 
-     
 ];
 
 export default testimonials;
