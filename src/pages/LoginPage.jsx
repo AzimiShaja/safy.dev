@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "../Header";
 import {AiFillApple, AiFillGithub, AiFillGoogleCircle} from "react-icons/ai";
 import Footer from "../components/Footer";
-
+import React from "react";
 export default function LoginPage() {
     return (
         <div className="flex flex-col justify-center h-screen pb-30 bg-bgColor">

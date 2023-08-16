@@ -3,6 +3,7 @@ import Header from "../Header";
 import {AiFillApple, AiFillGithub, AiFillGoogleCircle} from "react-icons/ai";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import React from "react";
 
 export default function Register(){
     const user = useState({
