@@ -83,7 +83,7 @@ export default function Course() {
                    
                 </div>
                 <div className="p-4  shadow-lg rounded-lg bg-primary text-white">
-                    <h2 className="text-2xl font-semibold">Java for Absolute Begginners</h2>
+                    <h2 className="text-2xl font-semibold">Java for absolute beginners</h2>
                     <p className="text-justify mt-5 leading-6">Discover the world of programming with 'Java for Absolute Beginners,' a beginner-friendly course that introduces you to Java's basics, equipping you with essential skills to start your coding journey confidently.</p>
                         <div className="flex items-center gap-4  pt-3">
                             <p className="">Languages:</p>
