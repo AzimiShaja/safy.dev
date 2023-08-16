@@ -34,7 +34,7 @@ textarea {
 }
 .expanded {
   padding: 0.4rem 0;
-  height: 300px; /* Set the desired expanded height */
+  height: 310px; /* Set the desired expanded height */
   transition: height 0.6s ease; /* Set the transition duration and easing */
 }
 .not-expanded {
