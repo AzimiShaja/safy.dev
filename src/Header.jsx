@@ -7,6 +7,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNavigation from "./mobileNav";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
   
   function handleToggle() {
     setNavbar(!navbar); 
@@ -14,7 +19,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-evenly max-lg:justify-around items-center p-4 shadow-lg">
+      <header className="flex justify-evenly max-lg:justify-between items-center p-4 shadow-lg">
         {/* left-nav */}
         <div className="flex items-center gap-2 text-3xl">
           <TbDropletCode className="logo" />
@@ -37,13 +42,23 @@ export default function Header() {
           </Link>
           <GiHamburgerMenu
             className="text-3xl lg:hidden cursor-pointer duration-500 active:rotate-90"
-            onClick={handleToggle}
+            onClick={toggleExpanded}
           />
         </div>
       </header>
-      {navbar && (
-        <MobileNavigation />
-    )}
+       
+            <div className={`bg-primary w-full text-white lg:hidden ${
+              expanded ? 'expanded'  : 'not-expanded'
+            }`}>
+            <ul className="flex flex-col gap-5 pl-3">
+              <a href="#"><li className="li">Home</li></a>
+              <a href="/#course"><li className="li">Courses</li></a>
+              <a href="/#testimonial"><li className="li">Our testimonials</li></a>
+              <a href="/#contact"><li className="li">Contact</li></a>
+              <a href="#"><li className="li">Why us?</li></a>
+            </ul>
+          </div>     
+    
     </>
   );
 }

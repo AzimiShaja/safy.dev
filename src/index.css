@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -27,4 +31,22 @@ textarea {
 }
 .footer-icons {
   @apply text-white text-3xl cursor-pointer;
+}
+.expanded {
+  padding: 0.4rem 0;
+  height: 300px; /* Set the desired expanded height */
+  transition: height 0.6s ease; /* Set the transition duration and easing */
+}
+.not-expanded {
+  overflow: hidden;
+  height:0;
+  transition: height 0.6s ease;
+}
+.expanded ul {
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
+.not-expanded ul {
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
