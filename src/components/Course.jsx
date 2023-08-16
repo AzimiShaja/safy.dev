@@ -31,7 +31,7 @@ export default function Course() {
                         </div>
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
+                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
                         <button className="underline">Learn More</button>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default function Course() {
                         <BiLogoJavascript className="icons text-yellow-400" />
                     </div>
                     <div className="flex max-md:flex-col gap-4 mt-4">
-                    <button className="btns bg-primary text-white flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
+                    <button className="btns bg-primary text-white flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
                         <button className="underline">Learn More</button>
                     </div>
                    
@@ -64,7 +64,7 @@ export default function Course() {
                         </div>
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
+                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
                         <button className="underline">Learn More</button>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Course() {
                         <BiLogoPython className="icons" />
                     </div>
                     <div className="flex max-md:flex-col gap-4 mt-4">
-                    <button className="btns border border-white bg-primary text-white flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
+                    <button className="btns border border-white bg-primary text-white flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
                         <button className="underline">Learn More</button>
                     </div>
                    
@@ -91,7 +91,7 @@ export default function Course() {
                         </div>
                  
                     <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enrol Now<FiArrowUpRight /></button>
+                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
                         <button className="underline">Learn More</button>
                     </div>
                 </div>

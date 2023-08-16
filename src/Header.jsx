@@ -4,19 +4,13 @@ import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import MobileNavigation from "./mobileNav";
 export default function Header() {
-  const [navbar, setNavbar] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpanded = () => {
     setExpanded(!expanded);
   };
   
-  function handleToggle() {
-    setNavbar(!navbar); 
-  }
-
   return (
     <>
       <header className="flex justify-evenly max-lg:justify-between items-center p-4 shadow-lg">
@@ -46,19 +40,17 @@ export default function Header() {
           />
         </div>
       </header>
-       
             <div className={`bg-primary w-full text-white lg:hidden ${
               expanded ? 'expanded'  : 'not-expanded'
             }`}>
-            <ul className="flex flex-col gap-5 pl-3">
-              <a href="#"><li className="li">Home</li></a>
-              <a href="/#course"><li className="li">Courses</li></a>
-              <a href="/#testimonial"><li className="li">Our testimonials</li></a>
-              <a href="/#contact"><li className="li">Contact</li></a>
-              <a href="#"><li className="li">Why us?</li></a>
-            </ul>
+              <ul className="flex flex-col gap-5 pl-3">
+                <a href="#"><li className="li">Home</li></a>
+                <a href="/#course"><li className="li">Courses</li></a>
+                <a href="/#testimonial"><li className="li">Our testimonials</li></a>
+                <a href="/#contact"><li className="li">Contact</li></a>
+                <a href="#"><li className="li">Why us?</li></a>
+              </ul>
           </div>     
-    
     </>
   );
 }
