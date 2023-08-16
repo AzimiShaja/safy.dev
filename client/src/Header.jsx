@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import MobileNavigation from "./mobileNav";
 export default function Header() {
   const [navbar, setNavbar] = useState(false);
   
   function handleToggle() {
-    setNavbar(!navbar); // Toggle the navbar state
+    setNavbar(!navbar); 
   }
 
   return (
     <>
-      <header className="flex lg:justify-evenly max-lg:justify-between items-center p-4 shadow-lg">
+      <header className="flex justify-evenly max-lg:justify-around items-center p-4 shadow-lg">
         {/* left-nav */}
         <div className="flex items-center gap-2 text-3xl">
           <TbDropletCode className="logo" />
@@ -36,22 +36,14 @@ export default function Header() {
             <FaUserCircle className="icons" />
           </Link>
           <GiHamburgerMenu
-            className="text-3xl lg:hidden cursor-pointer"
+            className="text-3xl lg:hidden cursor-pointer duration-500 active:rotate-90"
             onClick={handleToggle}
           />
         </div>
       </header>
-      {navbar && 
-        <div className="bg-primary w-full text-white py-4 lg:hidden">
-          <ul className="flex flex-col gap-5 pl-3">
-          <a href=""><li className="li">Home</li></a>  
-           <a href="/#course"><li className="li">Courses</li></a> 
-           <a href="/#testimonial"><li className="li">Our testimonials</li></a> 
-           <a href="/#contact"><li className="li">Contact</li></a> 
-           <a href=""><li className="li">Why us?</li></a> 
-          </ul>
-        </div>
-      }
+      {navbar && (
+        <MobileNavigation />
+    )}
     </>
   );
 }

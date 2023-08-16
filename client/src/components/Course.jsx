@@ -5,7 +5,7 @@ import {FiArrowUpRight} from "react-icons/fi";
 export default function Course() {
     return (
         <div id="course" className="py-10 md:px-60 px-3">
-            <div className="">
+            <div>
             <h1 className="text-4xl font-bold">Courses</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
             </div>

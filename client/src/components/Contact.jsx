@@ -7,11 +7,12 @@ export default function Contact(){
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
             </div>
             <div className="pt-12">
-                <form className="flex flex-col max-md:items-center gap-3">
+                <form className="flex flex-col max-md:items-center min-w-max gap-3 ">
                     <input type="text" className="border-primary" placeholder="Full name"/>
                     <input type="email" className="border-primary" placeholder="example@email.com"/>
-                    <textarea name="" id=""  rows="4" placeholder="your message"></textarea>
-                    <button className="bg-orange-400 px-4 py-2 md:w-2/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
+                    <textarea className="w-72" rows="4" placeholder="your message"></textarea>
+                    <button className="bg-orange-400 px-4 py-2 max-lg:w-5/12 lg:w-2/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
+
                 </form>
             </div>
         </div>
