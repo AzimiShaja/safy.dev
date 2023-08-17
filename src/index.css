@@ -33,20 +33,14 @@ textarea {
   @apply text-white text-3xl cursor-pointer;
 }
 .expanded {
-  padding: 0.4rem 0;
-  height: 310px; /* Set the desired expanded height */
-  transition: height 0.6s ease; /* Set the transition duration and easing */
+  @apply py-1 h-80 transition-all duration-500 ease-out;
 }
 .not-expanded {
-  overflow: hidden;
-  height:0;
-  transition: height 0.6s ease;
+  @apply  h-0 transition-all duration-500 ease-out;
 }
 .expanded ul {
-  opacity: 1;
-  transition: opacity 0.6s ease;
+  @apply opacity-100 transition-all duration-500 ease-out;
 }
 .not-expanded ul {
-  opacity: 0;
-  transition: opacity 0.6s ease;
+  @apply opacity-0 transition-all duration-500 ease-out;
 }
