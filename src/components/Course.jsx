@@ -1,7 +1,6 @@
-import {BiLogoJava, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPython, BiLogoReact, } from "react-icons/bi";
-import {SiExpress} from "react-icons/si";
-import {FiArrowUpRight} from "react-icons/fi";
-
+import {AiFillStar} from "react-icons/ai";
+import {BsStarHalf} from "react-icons/bs";
+import courses from "./Courses";
 export default function Course() {
     return (
         <div id="course" className="py-10 md:px-60 px-3">
@@ -9,92 +8,33 @@ export default function Course() {
             <h1 className="text-4xl font-bold">Courses</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
             </div>
-            <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-10">
-                <div className="p-4  shadow-lg rounded-lg bg-primary text-white">
-                    <h2 className="text-2xl font-semibold">MERN Stack</h2>
-                    <p className="text-justify mt-5 leading-6">The MERN stack combines MongoDB, Express.js, React, and Node.js 
-                        to enable developers to build full-stack web applications with a 
-                        flexible NoSQL database, a server-side framework, a JavaScript 
-                        library for user interfaces, and a runtime environment 
-                        for server-side scripting.</p>
-                        <div className="flex items-center gap-4  pt-3">
-                            <p className="">Languages:</p>
-                            <BiLogoNodejs className="icons" />
-                            <SiExpress className="icons" />
-                            <BiLogoMongodb className="icons" />
-                            <BiLogoReact className="icons" />
+            <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6">
+                {courses.map((course) =>{
+                    return (
+                        <div className="shadow-2xl p-4 bg-gray-50">
+                    <img className="rounded-lg" src={course.img}  alt="" />
+                    <div className="mt-4 flex flex-col gap-1">
+                        <h1 className="font-bold text-xl">{course.title}</h1>
+                        <p className="text-gray-400">{course.instructor}</p>
+                    </div>
+                    <div className="flex  items-center justify-between">
+                        <div className="flex  gap-2 mt-2 items-center">
+                            <p>{course.rating}</p>
+                            <div className="flex items-center">
+                                <AiFillStar className="text-yellow-500" />
+                                <AiFillStar className="text-yellow-500" />
+                                <AiFillStar className="text-yellow-500" />
+                                <AiFillStar className="text-yellow-500" />
+                                <BsStarHalf className="text-yellow-500 text-sm" />
+                            </div>
                         </div>
-
-                        <div className="flex items-center gap-4 mt-3">
-                            <p>prerequisites:</p>
-                            <BiLogoJavascript className="icons text-yellow-300" />
+                        <div className="mt-4">
+                            <p className="font-semibold">{course.price}₺</p>
                         </div>
-                 
-                    <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
-                        <button className="underline">Learn More</button>
                     </div>
                 </div>
-                <div className="p-4 shadow-lg rounded-lg">
-                    <h2 className="text-2xl font-semibold">JavaScript for Beginners</h2>
-                    <p className="text-justify mt-5 leading-6">Immerse yourself in the dynamic realm of web development through our meticulously crafted 'JavaScript for Beginners' course, offering you a hands-on and comprehensive exploration of fundamental programming concepts, adept DOM manipulation techniques, and the art of crafting interactive web experiences that engage users on multiple levels.</p>
-                   
-                    <div className="flex items-center gap-4  pt-3">
-                        <p className="">Languages:</p>
-                        <BiLogoJavascript className="icons text-yellow-400" />
-                    </div>
-                    <div className="flex max-md:flex-col gap-4 mt-4">
-                    <button className="btns bg-primary text-white flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
-                        <button className="underline">Learn More</button>
-                    </div>
-                   
-                </div>
-                <div className="p-4  shadow-lg rounded-lg bg-primary text-white">
-                    <h2 className="text-2xl font-semibold">Java OOP</h2>
-                    <p className="text-justify mt-5 leading-6">Java Object-Oriented Programming (OOP) is a powerful paradigm that 
-                                        allows developers to design and build software using classes, 
-                                        objects, and the principles of encapsulation, inheritance, and polymorphism, enabling modular, reusable, and efficient code construction.</p>
-                        <div className="flex items-center gap-4  pt-3">
-                            <p className="">Languages:</p>
-                            <BiLogoJava className="icons" />
-                        </div>
-
-                        <div className="flex items-center gap-4 mt-3">
-                            <p>prerequisites: Java fundemntals</p>
-                        </div>
-                 
-                    <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
-                        <button className="underline">Learn More</button>
-                    </div>
-                </div>
-                <div className="p-4 shadow-lg rounded-lg">
-                    <h2 className="text-2xl font-semibold">Absolute Python</h2>
-                    <p className="text-justify mt-5 leading-6">'Absolute Python' is an immersive program that equips learners with comprehensive skills in Python, covering fundamental concepts, data manipulation, and advanced topics, enabling them to excel in diverse coding pursuits.</p>
-                   
-                    <div className="flex items-center gap-4  pt-3">
-                        <p className="">Languages:</p>
-                        <BiLogoPython className="icons" />
-                    </div>
-                    <div className="flex max-md:flex-col gap-4 mt-4">
-                    <button className="btns border border-white bg-primary text-white flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
-                        <button className="underline">Learn More</button>
-                    </div>
-                   
-                </div>
-                <div className="p-4  shadow-lg rounded-lg bg-primary text-white">
-                    <h2 className="text-2xl font-semibold">Java for absolute beginners</h2>
-                    <p className="text-justify mt-5 leading-6">Discover the world of programming with 'Java for Absolute Beginners,' a beginner-friendly course that introduces you to Java's basics, equipping you with essential skills to start your coding journey confidently.</p>
-                        <div className="flex items-center gap-4  pt-3">
-                            <p className="">Languages:</p>
-                            <BiLogoJava className="icons" />
-                        </div>
-                 
-                    <div className="flex max-md:flex-col gap-4 mt-4">
-                        <button className="btns border border-white bg-white text-primary flex gap-1 items-center justify-center">Enroll Now<FiArrowUpRight /></button>
-                        <button className="underline">Learn More</button>
-                    </div>
-                </div>
+                    )
+                })}
             </div>
         </div>
     )

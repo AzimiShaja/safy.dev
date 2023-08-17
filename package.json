@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "autoprefixer": "^10.4.15",
     "browser-routes": "^0.0.14",
     "postcss": "^8.4.27",

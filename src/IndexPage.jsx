@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./Header";
 import {BsFillArrowDownCircleFill} from "react-icons/bs"
-import Course from "./components/Course";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import logo from "/src/assets/coding-bg.jpeg";
-
+import WhyUs from "./components/WhyUs";
+import Course from "./components/Course";
 export default function IndexPage() {
     return (
         <>
@@ -28,6 +28,7 @@ export default function IndexPage() {
             </div>
             <Course />
             <Testimonials />
+            <WhyUs />
             <Contact />
             <Footer />
         </>
