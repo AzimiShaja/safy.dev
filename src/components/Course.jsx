@@ -8,7 +8,7 @@ export default function Course() {
             <h1 className="text-4xl font-bold">Courses</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
             </div>
-            <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6">
                 {courses.map((course) =>{
                     return (
                         <div className="shadow-2xl p-4 bg-gray-50">

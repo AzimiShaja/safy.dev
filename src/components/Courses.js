@@ -1,6 +1,7 @@
 import mern from "/src/assets/mer.jpeg";
 import java from "/src/assets/java.png";
 import python from "/src/assets/python.jpeg";
+import javascript from "/src/assets/js.png"
 const courses = [
     {
         id : "1",
@@ -27,6 +28,15 @@ const courses = [
         instructor: "Anas Bashir",
         price: "199.99",
         rating: "4.5"
+        
+    },
+    {
+        id : "4",
+        img: javascript,
+        title: "JavaScript for beginners 2023",
+        instructor: "Shaja Azimi",
+        price: "399.99",
+        rating: "4.2"
         
     },
 ]
