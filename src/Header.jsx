@@ -26,7 +26,7 @@ export default function Header() {
            <a href="/#course"><li>Courses</li></a> 
            <a href="/#testimonial"><li>Our testimonials</li></a> 
            <a href="/#contact"><li>Contact</li></a> 
-           <a href=""><li>Why us?</li></a> 
+           <a href="/#whyus"><li>Why us?</li></a> 
           </ul>
         </div>
         {/* Right-nav */}
