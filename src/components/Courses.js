@@ -18,7 +18,7 @@ const courses = [
         title: "The Complete Java Bootcamp 2023",
         instructor: "Shaja Azimi",
         price: "199.99",
-        rating: "4.5"
+        rating: "4.1"
         
     },
     {
@@ -27,7 +27,7 @@ const courses = [
         title: "Python from Zero to Hero",
         instructor: "Anas Bashir",
         price: "199.99",
-        rating: "4.5"
+        rating: "4.9"
         
     },
     {

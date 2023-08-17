@@ -2,6 +2,7 @@ import {AiFillStar} from "react-icons/ai";
 import {BsStarHalf} from "react-icons/bs";
 import courses from "./Courses";
 export default function Course() {
+
     return (
         <div id="course" className="py-10 md:px-60 px-3">
             <div>
@@ -11,7 +12,7 @@ export default function Course() {
             <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6 place-items-center">
                 {courses.map((course) =>{
                     return (
-                        <div className="shadow-2xl p-4 bg-gray-50 rounded-sm hover:scale-110 duration-500 cursor-pointer">
+                        <div className="shadow-2xl p-4 bg-gray-50 rounded-sm hover:scale-110 duration-500">
                             <img className="rounded-lg" src={course.img}  alt="" />
                             <div className="mt-4 flex flex-col gap-1">
                                 <h1 className="font-bold text-lg">{course.title}</h1>
@@ -31,6 +32,11 @@ export default function Course() {
                                 <div className="mt-4">
                                     <p className="font-semibold">{course.price}₺</p>
                                 </div>
+                            </div>
+                            <div className=" flex justify-center items-center">
+                                <button className="p-2 mt-5 rounded-md text-white bg-primary cursor-pointer w-full" onClick={() =>{
+                                    alert(`${course.title} added to cart`);
+                                }}>Add to cart</button>
                             </div>
                         </div>
                     )

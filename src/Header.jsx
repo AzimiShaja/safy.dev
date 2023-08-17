@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {SlBasket} from "react-icons/sl";
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
 
@@ -34,6 +35,7 @@ export default function Header() {
           <Link to="/login">
             <FaUserCircle className="icons" />
           </Link>
+            <SlBasket className="icons" />
           <GiHamburgerMenu
             className="text-3xl lg:hidden cursor-pointer duration-500 active:rotate-90"
             onClick={toggleExpanded}
