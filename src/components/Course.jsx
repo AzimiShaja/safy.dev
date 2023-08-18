@@ -1,10 +1,30 @@
 import {AiFillStar} from "react-icons/ai";
 import {BsStarHalf} from "react-icons/bs";
 import courses from "./Courses";
+import { useState , useEffect } from "react";
 export default function Course() {
+    const [isTransition, setIsTransition] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const revealThreshold = 500; 
+    
+        if (scrollPosition > revealThreshold) {
+          setIsTransition(true);
+        } else {
+          setIsTransition(false);
+        }
+      };
+
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
 
     return (
-        <div id="course" className="py-10 md:px-60 px-3">
+        <div id="course" className={`py-10 md:px-60 px-3 ${isTransition ? "translated" : "not-translated"}`}>
             <div>
             <h1 className="text-4xl font-bold">Courses</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>

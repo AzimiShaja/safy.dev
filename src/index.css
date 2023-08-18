@@ -9,6 +9,12 @@ html {
 .btns {
   @apply   px-3 py-1 rounded-lg; 
 }
+.translated {
+  @apply opacity-100 transition-all duration-700;
+}
+.not-translated{
+  @apply opacity-0 transition-all duration-700;
+}
 input[type="email"], input[type="password"], input[type="text"]{
   @apply border py-3 px-3 md:w-96 w-72 rounded-lg;
 }

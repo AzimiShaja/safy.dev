@@ -1,7 +1,28 @@
+import { useEffect,useState } from "react";
 import testimonials from "./Testominals.js";
 export default function Testimonials(){
+    const [isTransition, setIsTransition] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const revealThreshold = 1000; 
+    
+        if (scrollPosition > revealThreshold) {
+          setIsTransition(true);
+        } else {
+          setIsTransition(false);
+        }
+      };
+
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
     return (
-        <div id="testimonial" className="py-20 md:px-60 px-3">
+        <div id="testimonial" className={`py-20 md:px-60 px-3 ${isTransition ? "translated" : "not-translated"}`}>
             <div>
             <h1 className="text-4xl font-bold">Our Testimonials</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>

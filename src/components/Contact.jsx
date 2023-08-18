@@ -1,7 +1,28 @@
 import {BsFillSendFill} from "react-icons/bs";
+import { useState , useEffect } from "react";
 export default function Contact(){
+    const [isTransition, setIsTransition] = useState(false);
+
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const revealThreshold = 2500; 
+    
+        if (scrollPosition > revealThreshold) {
+          setIsTransition(true);
+        } else {
+          setIsTransition(false);
+        }
+      };
+
+      useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
     return (
-        <div id="contact" className="py-10 md:px-60 px-3">
+        <div id="contact" className={`py-10 md:px-60 px-3 ${isTransition ? "translated" : "not-translated"}`}>
             <div className="">
             <h1 className="text-4xl font-bold">Contact Us</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
