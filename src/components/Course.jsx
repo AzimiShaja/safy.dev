@@ -9,11 +9,11 @@ export default function Course() {
             <h1 className="text-4xl font-bold">Courses</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
             </div>
-            <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6 place-items-center">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 pt-12 xl:gap-5 gap-6">
                 {courses.map((course) =>{
                     return (
-                        <div className="shadow-2xl p-4 bg-gray-50 rounded-sm hover:scale-110 duration-500">
-                            <img className="rounded-lg" src={course.img}  alt="" />
+                        <div key={course.id} className="shadow-2xl p-4 bg-gray-50 rounded-sm cursor-pointer flex flex-col justify-between">
+                            <img className="w-full hover:opacity-70" src={course.img}  alt="" />
                             <div className="mt-4 flex flex-col gap-1">
                                 <h1 className="font-bold text-lg">{course.title}</h1>
                                 <p className="text-gray-400">{course.instructor}</p>

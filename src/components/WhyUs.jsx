@@ -7,7 +7,7 @@ export default function WhyUs() {
             <h1 className="text-4xl font-bold">Why Us?</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
         </div>
-        <div className="pt-12 grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-10">
+        <div className="mt-12 grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-10 bg-red">
             <div className="shadow-xl flex flex-col justify-center items-center rounded-lg">
                 <div className="bg-primary w-full rounded-lg flex flex-col items-center justify-center p-4 text-white gap-2">
                    <GiTeacher className="text-6xl "/>

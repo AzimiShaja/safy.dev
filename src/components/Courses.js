@@ -9,7 +9,7 @@ const courses = [
         title: "Mern Stack Web Development 2023",
         instructor: "Shaja Azimi",
         price: "299.99",
-        rating: "4.5"
+        rating: "4.3"
         
     },
     {
