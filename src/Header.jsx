@@ -35,7 +35,9 @@ export default function Header() {
           <Link to="/login">
             <FaUserCircle className="icons" />
           </Link>
-            <SlBasket className="icons" />
+           <Link to="/basket">
+           <SlBasket className="icons" />
+           </Link> 
           <GiHamburgerMenu
             className="text-3xl lg:hidden cursor-pointer duration-500 active:rotate-90"
             onClick={toggleExpanded}

@@ -22,7 +22,7 @@ export default function Contact(){
       }, []);
 
     return (
-        <div id="contact" className={`py-10 md:px-60 px-3 ${isTransition ? "translated" : "not-translated"}`}>
+        <div id="contact" className={`py-10 md:px-60 px-3 my-10 ${isTransition ? "translated" : "not-translated"}`}>
             <div className="">
             <h1 className="text-4xl font-bold">Contact Us</h1>
             <div className="bg-orange-400 w-full h-1 relative top-5"></div>
@@ -33,7 +33,6 @@ export default function Contact(){
                     <input type="email" className="border-primary" placeholder="example@email.com"/>
                     <textarea className="w-72" rows="4" placeholder="your message"></textarea>
                     <button className="bg-orange-400 px-4 py-2 max-lg:w-5/12 lg:w-2/12 text-white rounded-lg flex items-center justify-center gap-2">Send <BsFillSendFill /></button>
-
                 </form>
             </div>
         </div>

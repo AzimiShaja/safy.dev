@@ -2,6 +2,8 @@ import mern from "/src/assets/mer.jpeg";
 import java from "/src/assets/java.png";
 import python from "/src/assets/python.jpeg";
 import javascript from "/src/assets/js.png"
+
+
 const courses = [
     {
         id : "1",

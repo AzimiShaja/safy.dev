@@ -4,7 +4,6 @@ import IndexPage from "./IndexPage";
 import LoginPage from "./pages/LoginPage";
 import Register from "./pages/Register";
 import './index.css'
-
 function App() {
   return (
     <Routes>

@@ -8,9 +8,10 @@ import logo from "/src/assets/coding-bg.jpeg";
 import WhyUs from "./components/WhyUs";
 import Course from "./components/Course";
 export default function IndexPage() {
+
     return (
         <>
-            <div id="home" className="flex flex-col min-h-full bg-bgColor">
+            <div id="home" className={`flex flex-col min-h-full bg-bgColor`}>
                 <Header />
                 <div className="max-lg:mt-20 grid grid-cols-2 min-h-screen place-items-center max-md:grid-cols-1">
                     <div className="h-full flex flex-col justify-center items-center w-10/12">
